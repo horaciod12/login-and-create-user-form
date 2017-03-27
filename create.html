@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
+        <title>Registration Form</title>
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/validate.js"></script>
+    </head>
+    
+    <body>
+        <form action="./php/registration.php" method="post" class="form-register" onsubmit="return validate();">
+            <h2 class="form__titulo">Create Your Account</h2>
+            <div class="contenedor-inputs">
+                <input type="text" id="name" name="name" placeholder="Name" class="input-48" required>
+                <input type="text" id="lastname" name="lastname" placeholder="Last Name" class="input-48" required>
+                <input type="text" id="email" name="email" placeholder="Email" class="input-100" required>
+                <input type="text" id="user" name="user" placeholder="User" class="input-48" required>
+                <input type="password" id="password" name="password" placeholder="Password" class="input-48" required>
+                <input type="text" id="phone" name="phone" placeholder="Phone Number" class="input-100" required>
+                <input type="submit" value="Register" class="btn-enviar">
+                <p class="form__link">Already have an account? <a href="login.html">Click here</a></p>
+            </div>
+        </form>
+    </body>
+    
+</html>
